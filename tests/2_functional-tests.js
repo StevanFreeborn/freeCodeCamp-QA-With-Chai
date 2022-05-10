@@ -69,7 +69,7 @@ if (process.env.NODE_ENV == 'development') {
 }
 
 else {
-    Browser.site = 'https://freecodecampqawithchai.herokuapp.com'
+    Browser.site = 'https://freeCodeCamp-QA-With-Chai.stevanfreeborn.repl.co'
 }
 
 const browser = new Browser();
