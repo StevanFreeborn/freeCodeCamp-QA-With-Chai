@@ -68,7 +68,7 @@ if (process.env.NODE_ENV == 'development') {
     Browser.site = 'http://localhost:3000'
 }
 
-if (process.env.NODE_ENV == 'production') {
+else {
     Browser.site = 'https://freecodecampqawithchai.herokuapp.com'
 }
 
