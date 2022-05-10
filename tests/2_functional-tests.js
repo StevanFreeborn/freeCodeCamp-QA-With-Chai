@@ -64,19 +64,7 @@ suite('Functional Tests', function () {
 
 const Browser = require('zombie');
 
-if (process.env.NODE_ENV == 'development') {
-    Browser.site = 'http://localhost:3000'
-}
-
-else {
-    Browser.site = 'https://freeCodeCamp-QA-With-Chai.stevanfreeborn.repl.co'
-}
-
-const browser = new Browser();
-
-suiteSetup(done => {
-    return browser.visit('/', done);
-});
+Browser.site = 'https://freeCodeCamp-QA-With-Chai.stevanfreeborn.repl.co'
 
 suite('Functional Tests with Zombie.js', function () {
     this.timeout(5000);
